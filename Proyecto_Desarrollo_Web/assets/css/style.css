@@ -1,0 +1,420 @@
+body {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    margin: 0;
+}
+
+a {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+header {
+    background-color: white rgb(96, 101, 241);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-header img {
+    border: 8px solid black;
+}
+
+#nav {
+    display: flex;
+}
+
+#links li {
+    margin-right: 20px;
+}
+
+#icono-nav {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .contenido-header {
+        flex-wrap: wrap;
+    }
+
+    #nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #icono-nav {
+        display: block;
+        float: right;
+    }
+
+    #links {
+        display: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #links li {
+        margin: 0;
+    }
+
+    #links a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #links a:last-child {
+        border-bottom: none;
+    }
+
+    .menu-abierto #links {
+        display: block;
+    }
+}
+
+.contenido-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#links li {
+    display: inline-block;
+    margin-right: 20px;
+    /* opcional: agrega un margen entre los enlaces */
+}
+
+#links li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+#links li a:hover {
+    background-color: rgb(81, 81, 129);
+}
+
+#productos {
+    background-image: url('/assets/css/imagenes/pic1A.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    color: black;
+}
+
+.productos {
+    background-color: darkblue;
+    color: white;
+    padding: 30px;
+    font-size: 15px;
+    opacity: 0.5;
+    max-width: 50%;
+
+}
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: #5cb85c;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: #fff;
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+/* Estilos para la sección de contenido */
+
+.container {
+    max-width: px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-left: 20px;
+}
+
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.article-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.article-meta {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.presentacion h1 {
+    font-size: 40px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.mapa-contenedor {
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 30%;
+
+}
+
+.mapa {
+    border: 10px solid black;
+    width: 30%;
+    height: 300px;
+    float: left;
+}
+
+#contacto {
+    clear: both;
+}
+
+/* Estilos para el footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Estilos para pantallas más grandes a 1200px */
+@media screen and (min-width: 1200px) {
+    /* Agrega aquí tus estilos para pantallas más grandes a 1200px */
+    /* Por ejemplo: */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 45%;
+}
+
+body {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Estilos para dispositivos entre 992px y 1199px */
+
+.container {
+    max-width: 960px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    flex-basis: 50%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1199px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para dispositivos hasta 720px */
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.item {
+    flex-basis: 100%;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+nav {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #333;
+    margin-top: 0;
+}
+
+.nav-links li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.menu-icon {
+    display: block;
+}
+
+.menu-icon .navicon {
+    background-color: #333;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+    background-color: #333;
+}
+
+
+/* Estilos para pantallas entre 992px y 1199px */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* Agrega aquí tus estilos para pantallas entre 992px y 1199px */
+    /* Por ejemplo: */
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para pantallas con un ancho máximo de 720px */
+@media screen and (max-width: 720px) {
+
+    /* Agrega aquí tus estilos para pantallas con un ancho máximo de 720px */
+    /* Por ejemplo: */
+    body {
+        font-size: 16px;
+    }
+}
+
+/* animaciones*/
+
+.logo {
+    animation-name: rotacion-logo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes rotacion-logo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
